@@ -19,9 +19,10 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "test": "react-scripts test --coverage",
+    "test:all": "react-scripts test --watchAll --coverage",
     "eject": "react-scripts eject",
-    "lint": "eslint '{src,tests}/**/*.{js,jsx,ts,tsx}'",
+    "lint": "eslint src/**/*.{ts,tsx}",
     "lint:style": "npx stylelint 'src/**/*.scss'"
   },
   "browserslist": {
@@ -45,5 +46,15 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-prettier": "^1.2.0",
     "stylelint-scss": "^3.21.0"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "!src/index.tsx"
+    ],
+    "coverageThreshold": {
+      "global": {
+        "lines": 80
+      }
+    }
   }
 }

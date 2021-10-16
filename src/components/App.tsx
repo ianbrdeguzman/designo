@@ -2,7 +2,7 @@ import React from 'react';
 
 import styles from './App.module.scss';
 
-const App: React.FC<unknown> = () => {
+const App = (): JSX.Element => {
   return (
     <div className={styles.app}>
       <h1 className={styles.app__title}>App</h1>
