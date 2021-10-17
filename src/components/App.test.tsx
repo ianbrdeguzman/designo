@@ -7,5 +7,5 @@ test('renders the h1 header', () => {
 
   const header = screen.getByRole('heading');
 
-  expect(header.textContent).toBe('App');
+  expect(header.textContent).toBe('Designo');
 });
