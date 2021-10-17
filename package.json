@@ -1,6 +1,6 @@
 {
   "name": "designo",
-  "hostname": "http://ianbrdeguzman.github.io/designo",
+  "homepage": "http://ianbrdeguzman.github.io/designo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
