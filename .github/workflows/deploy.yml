@@ -2,8 +2,8 @@ name: GH Pages CD
 
 on:
   workflow_run:
-    workflows: ["Lint and Test CI"],
-    branches: [main],
+    workflows: ["Lint and Test CI"]
+    branches: [main]
     types:
       - completed
 
