@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/designo/static/css/main.4fa14fb3.chunk.css",
-    "main.js": "/designo/static/js/main.ad9d6ea9.chunk.js",
-    "main.js.map": "/designo/static/js/main.ad9d6ea9.chunk.js.map",
+    "main.css": "/designo/static/css/main.8dffa910.chunk.css",
+    "main.js": "/designo/static/js/main.a286d8da.chunk.js",
+    "main.js.map": "/designo/static/js/main.a286d8da.chunk.js.map",
     "runtime-main.js": "/designo/static/js/runtime-main.97383fa9.js",
     "runtime-main.js.map": "/designo/static/js/runtime-main.97383fa9.js.map",
     "static/js/2.5ce8f8dd.chunk.js": "/designo/static/js/2.5ce8f8dd.chunk.js",
     "static/js/2.5ce8f8dd.chunk.js.map": "/designo/static/js/2.5ce8f8dd.chunk.js.map",
     "index.html": "/designo/index.html",
-    "static/css/main.4fa14fb3.chunk.css.map": "/designo/static/css/main.4fa14fb3.chunk.css.map",
+    "static/css/main.8dffa910.chunk.css.map": "/designo/static/css/main.8dffa910.chunk.css.map",
     "static/js/2.5ce8f8dd.chunk.js.LICENSE.txt": "/designo/static/js/2.5ce8f8dd.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.97383fa9.js",
     "static/js/2.5ce8f8dd.chunk.js",
-    "static/css/main.4fa14fb3.chunk.css",
-    "static/js/main.ad9d6ea9.chunk.js"
+    "static/css/main.8dffa910.chunk.css",
+    "static/js/main.a286d8da.chunk.js"
   ]
 }
