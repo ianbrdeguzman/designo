@@ -1,5 +1,6 @@
 {
   "name": "designo",
+  "hostname": "http://ianbrdeguzman.github.io/designo",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -17,6 +18,8 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
+    "predeply": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --coverage",
@@ -39,6 +42,7 @@
   },
   "devDependencies": {
     "eslint-config-airbnb-typescript-prettier": "^4.2.0",
+    "gh-pages": "^3.2.3",
     "node-sass": "^6.0.1",
     "prettier": "^2.4.1",
     "stylelint": "^13.13.1",
