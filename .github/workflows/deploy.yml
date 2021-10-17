@@ -24,7 +24,8 @@ jobs:
         run: npm ci
 
       - name: Deploy to GH Pages
-      - run: git config --global user.email "ianbrdeguzman@gmail.com",
-      - run: git config --global user.name "ianbrdeguzman"
-      - run: git remote set-url origin https://{{secrets.ACCESS_TOKEN}}>github.com/ianbrdeguzman/designo.git
-      - run: npm run deploy
+        run: |
+          git config --global user.email "ianbrdeguzman@gmail.com"
+          git config --global user.name "ianbrdeguzman"
+          git remote set-url origin https://{{secrets.ACCESS_TOKEN}}>github.com/ianbrdeguzman/designo.git
+          npm run deploy
