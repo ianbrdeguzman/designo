@@ -1,8 +1,11 @@
 name: GH Pages CD
 
 on:
-  push:
-    branches: [main]
+  workflow_run:
+    workflows: ["Lint and Test CI"],
+    branches: [main],
+    types:
+      - completed
 
 jobs:
   build:
@@ -14,12 +17,10 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-
       - name: Use Node.js ${{ matrix.node-version }}
         uses: actions/setup-node@v2
         with:
           node-version: ${{ matrix.node-version }}
-
       - name: Install dependencies
         run: npm ci
 
@@ -27,5 +28,5 @@ jobs:
         run: |
           git config --global user.email "ianbrdeguzman@gmail.com"
           git config --global user.name "ianbrdeguzman"
-          git remote set-url origin https://{{secrets.ACCESS_TOKEN}}>github.com/ianbrdeguzman/designo.git
+          git remote set-url origin https://${{ secrets.ACCESS_TOKEN }}@github.com/ianbrdeguzman/designo.git
           npm run deploy
