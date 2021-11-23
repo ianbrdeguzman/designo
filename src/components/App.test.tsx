@@ -2,10 +2,11 @@ import React from 'react';
 import { render, screen } from '@testing-library/react';
 import App from './App';
 
-test('renders the h1 header', () => {
-  render(<App />);
+describe('<App />', () => {
+  it('renders the <Header /> component', () => {
+    render(<App />);
+    const header = screen.getByRole('navigation');
 
-  const header = screen.getByRole('heading');
-
-  expect(header.textContent).toBe('Designo');
+    expect(header).toBeInTheDocument();
+  });
 });
