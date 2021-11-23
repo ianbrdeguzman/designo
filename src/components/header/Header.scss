@@ -1,0 +1,101 @@
+@import '../../index.scss';
+
+.header {
+  height: 6rem;
+  display: flex;
+  background-color: #fff;
+  justify-content: center;
+  align-items: center;
+  position: sticky;
+  top: 0;
+
+  @media (min-width: $screen-md-min) {
+    height: 10rem;
+  }
+}
+
+.header__nav {
+  width: 100%;
+  max-width: $max-width;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 1rem;
+  position: relative;
+  background-color: #fff;
+}
+
+.header__logo {
+  height: 1.5rem;
+}
+
+.header__menu {
+  border: none;
+  background-color: transparent;
+
+  @media (min-width: $screen-md-min) {
+    display: none;
+  }
+}
+
+.header__list {
+  width: 100%;
+  color: #fff;
+  font-size: 1.5rem;
+  background-color: #000;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transition: bottom 0.3s ease-in-out;
+
+  @media (min-width: $screen-md-min) {
+    z-index: 0;
+    font-size: $font-size-sm;
+    color: #000;
+    position: relative;
+    background-color: transparent;
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+  }
+}
+
+.header__list--open {
+  bottom: -8rem;
+}
+
+.header__list-item {
+  padding: 0.25rem 1rem;
+  text-align: right;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+  position: relative;
+  transition: color 0.1s linear;
+
+  &:hover {
+    cursor: pointer;
+    color: $designo-orange;
+  }
+
+  @media (min-width: $screen-md-min) {
+    padding: 0;
+    margin: 0 1rem;
+
+    &::after {
+      content: '';
+      width: 0;
+      height: 1px;
+      position: absolute;
+      bottom: -0.25rem;
+      left: 0;
+      transition: width 0.3s linear;
+      background-color: $designo_orange;
+    }
+
+    &:hover::after {
+      width: 100%;
+    }
+  }
+}
