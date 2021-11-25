@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import classnames from 'classnames';
+import Menu from '../menu/Menu';
 import Logo from '../../assets/shared/desktop/logo-dark.png';
 import { ReactComponent as HambugerMenu } from '../../assets/shared/mobile/icon-hamburger.svg';
 import { ReactComponent as CloseMenu } from '../../assets/shared/mobile/icon-close.svg';
@@ -20,15 +20,7 @@ const Header = (): JSX.Element => {
         >
           {isMenuOpen ? <CloseMenu /> : <HambugerMenu />}
         </button>
-        <ul
-          className={classnames('header__list', {
-            'header__list--open': isMenuOpen
-          })}
-        >
-          <li className="header__list-item">Our Company</li>
-          <li className="header__list-item">Locations</li>
-          <li className="header__list-item">Contact</li>
-        </ul>
+        <Menu isMenuOpen={isMenuOpen} />
       </nav>
     </header>
   );
