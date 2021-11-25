@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/designo/static/css/main.587404b6.chunk.css",
-    "main.js": "/designo/static/js/main.131b7054.chunk.js",
-    "main.js.map": "/designo/static/js/main.131b7054.chunk.js.map",
+    "main.css": "/designo/static/css/main.8051c8cf.chunk.css",
+    "main.js": "/designo/static/js/main.9e87095c.chunk.js",
+    "main.js.map": "/designo/static/js/main.9e87095c.chunk.js.map",
     "runtime-main.js": "/designo/static/js/runtime-main.97383fa9.js",
     "runtime-main.js.map": "/designo/static/js/runtime-main.97383fa9.js.map",
     "static/js/2.3de3359d.chunk.js": "/designo/static/js/2.3de3359d.chunk.js",
     "static/js/2.3de3359d.chunk.js.map": "/designo/static/js/2.3de3359d.chunk.js.map",
     "index.html": "/designo/index.html",
-    "static/css/main.587404b6.chunk.css.map": "/designo/static/css/main.587404b6.chunk.css.map",
+    "static/css/main.8051c8cf.chunk.css.map": "/designo/static/css/main.8051c8cf.chunk.css.map",
     "static/js/2.3de3359d.chunk.js.LICENSE.txt": "/designo/static/js/2.3de3359d.chunk.js.LICENSE.txt",
     "static/media/icon-close.010e2d53.svg": "/designo/static/media/icon-close.010e2d53.svg",
     "static/media/icon-hamburger.a39ae0d1.svg": "/designo/static/media/icon-hamburger.a39ae0d1.svg"
@@ -16,7 +16,7 @@
   "entrypoints": [
     "static/js/runtime-main.97383fa9.js",
     "static/js/2.3de3359d.chunk.js",
-    "static/css/main.587404b6.chunk.css",
-    "static/js/main.131b7054.chunk.js"
+    "static/css/main.8051c8cf.chunk.css",
+    "static/js/main.9e87095c.chunk.js"
   ]
 }
